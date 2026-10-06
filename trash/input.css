@@ -1,0 +1,14 @@
+[cha-field] {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+}
+
+[cha-field] label {
+  font-size: var(--label-lg);
+  position: absolute;
+  bottom: 100%;
+  pointer-events: none;
+  user-select: none;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Select y Options</title>
+
+    <style>
+        /* Variables base de tu framework */
+        :root {
+            --cha-space-xs: 0.5rem;
+            --cha-space-sm: 0.75rem;
+            --cha-space-md: 1rem;
+            --cha-radius-sm: 8px;
+            --cha-radius-md: 12px;
+            --surface: #080808;
+            --on-surface: #f1f1f1;
+            --surface-container-high: #1d1d1d;
+            --outline: #777777;
+            --primary: #ea580c;
+        }
+
+        body {
+            background-color: var(--surface);
+            color: var(--on-surface);
+            font-family: system-ui, sans-serif;
+        }
+
+        [cha-col] {
+            display: flex;
+            flex-direction: column;
+        }
+
+        [cha-row] {
+            display: flex;
+            flex-direction: row;
+        }
+
+        [cha-gap="sm"] {
+            gap: var(--cha-space-sm);
+        }
+
+        [cha-p="md"] {
+            padding: var(--cha-space-md);
+        }
+
+        [cha-p="sm"] {
+            padding: var(--cha-space-sm);
+        }
+
+        [cha-radius="md"] {
+            border-radius: var(--cha-radius-md);
+        }
+
+        [cha-radius="sm"] {
+            border-radius: var(--cha-radius-sm);
+        }
+
+        /* Estilos del select nativo */
+        select.native-select {
+            background-color: var(--surface-container-high);
+            color: var(--on-surface);
+            border: 1px solid var(--outline);
+            padding: var(--cha-space-xs) var(--cha-space-sm);
+            border-radius: var(--cha-radius-sm);
+            font: inherit;
+        }
+
+        /* Intento de estilo en options nativos */
+        select.native-select option {
+            background-color: var(--surface-container-high);
+            color: var(--on-surface);
+        }
+
+        /* Simulación de desplegable personalizado (Custom Select) */
+        .custom-dropdown {
+            border: 1px solid var(--outline);
+            background-color: var(--surface-container-high);
+        }
+
+        .custom-option {
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .custom-option:hover {
+            background-color: var(--primary);
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body cha-p="md">
+
+    <main cha-col cha-gap="sm" style="max-width: 400px; margin: 0 auto;">
+        <h2>1. Select Nativo</h2>
+        <p style="font-size: 0.85rem; opacity: 0.8;">
+            Dependiendo de tu navegador/SO, los estilos en los <code>&lt;option&gt;</code> pueden ser ignorados
+            visualmente al desplegar la lista.
+        </p>
+
+        <select class="native-select">
+            <option value="1">Opción Nativa 1</option>
+            <option value="2">Opción Nativa 2</option>
+            <option value="3">Opción Nativa 3</option>
+        </select>
+
+        <hr style="border-color: var(--outline); margin: 1rem 0;">
+
+        <h2>2. Desplegable Personalizado (HTML/CSS)</h2>
+        <p style="font-size: 0.85rem; opacity: 0.8;">
+            Si necesitas control total sobre bordes, padding y colores al pasar el cursor, esta es la estructura que se
+            utiliza en la práctica.
+        </p>
+
+        <div class="custom-dropdown" cha-col cha-radius="md" cha-p="sm" cha-gap="sm">
+            <div class="custom-option" cha-p="sm" cha-radius="sm">Opción Personalizada 1</div>
+            <div class="custom-option" cha-p="sm" cha-radius="sm">Opción Personalizada 2</div>
+            <div class="custom-option" cha-p="sm" cha-radius="sm">Opción Personalizada 3</div>
+        </div>
+    </main>
+
+</body>
+
+</html>

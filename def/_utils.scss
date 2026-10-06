@@ -1,0 +1,19 @@
+@use "sass:map";
+
+@function map-to-vars($source-map, $prefix: "") {
+  $result: ();
+  $var-prefix: if($prefix != "", "--#{$prefix}-", "--");
+
+  @each $key, $value in $source-map {
+    $result: map.merge($result, (#{$key}: var(#{$var-prefix}#{$key})));
+  }
+  @return $result;
+}
+
+@mixin emit-vars($source-map, $prefix: "") {
+  $var-prefix: if($prefix != "", "--#{$prefix}-", "--");
+
+  @each $key, $value in $source-map {
+    #{$var-prefix}#{$key}: #{$value};
+  }
+}

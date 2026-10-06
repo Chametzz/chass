@@ -1,0 +1,21 @@
+@use "utils" as u;
+@use "sass:map";
+
+$data: (
+  "lt": 300,
+  "rg": 400,
+  "md": 500,
+  "sb": 600,
+  "bd": 700,
+  "blk": 900,
+);
+
+$vars: u.map-to-vars($data, "fw");
+
+@mixin set {
+  @include u.emit-vars($data, "fw");
+}
+
+@function get($keys...) {
+  @return map.get($vars, $keys...);
+}

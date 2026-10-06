@@ -1,0 +1,57 @@
+@use "../def/space";
+
+@mixin set {
+  @each $key, $value in space.$vars {
+    [cha-g="#{$key}"] {
+      gap: $value;
+    }
+
+    [cha-m="#{$key}"] {
+      margin: $value;
+    }
+    [cha-mx="#{$key}"] {
+      margin-left: $value;
+      margin-right: $value;
+    }
+    [cha-my="#{$key}"] {
+      margin-bottom: $value;
+      margin-top: $value;
+    }
+    [cha-mt="#{$key}"] {
+      margin-top: $value;
+    }
+    [cha-mr="#{$key}"] {
+      margin-right: $value;
+    }
+    [cha-mb="#{$key}"] {
+      margin-bottom: $value;
+    }
+    [cha-ml="#{$key}"] {
+      margin-left: $value;
+    }
+
+    [cha-p="#{$key}"] {
+      padding: $value;
+    }
+    [cha-px="#{$key}"] {
+      padding-left: $value;
+      padding-right: $value;
+    }
+    [cha-py="#{$key}"] {
+      padding-bottom: $value;
+      padding-top: $value;
+    }
+    [cha-pt="#{$key}"] {
+      padding-top: $value;
+    }
+    [cha-pr="#{$key}"] {
+      padding-right: $value;
+    }
+    [cha-pb="#{$key}"] {
+      padding-bottom: $value;
+    }
+    [cha-pl="#{$key}"] {
+      padding-left: $value;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@mixin set {
+  [cha-ta="start"] {
+    text-align: start;
+  }
+
+  [cha-ta="left"] {
+    text-align: left;
+  }
+
+  [cha-ta="center"] {
+    text-align: center;
+  }
+
+  [cha-ta="right"] {
+    text-align: right;
+  }
+
+  [cha-ta="end"] {
+    text-align: end;
+  }
+
+  [cha-ta="justify"] {
+    text-align: justify;
+  }
+}

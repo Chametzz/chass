@@ -1,0 +1,22 @@
+@use "utils" as u;
+@use "sass:map";
+
+$data: (
+  "none": 0px,
+  "xs": 4px,
+  "sm": 8px,
+  "md": 12px,
+  "lg": 16px,
+  "xl": 28px,
+  "full": 999px,
+);
+
+$vars: u.map-to-vars($data, "rad");
+
+@mixin set {
+  @include u.emit-vars($data, "rad");
+}
+
+@function get($keys...) {
+  @return map.get($vars, $keys...);
+}

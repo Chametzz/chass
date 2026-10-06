@@ -1,0 +1,296 @@
+@use "sass:map";
+
+$data: (
+  "primary": (
+    "on": "on-primary",
+    "light": #f97316,
+    "dark": #ea580c,
+  ),
+  "on-primary": (
+    "on": "primary",
+    "light": #ffffff,
+    "dark": #ffffff,
+  ),
+  "primary-container": (
+    "on": "on-primary-container",
+    "light": #f97316,
+    "dark": #ea580c,
+  ),
+  "on-primary-container": (
+    "on": "primary-container",
+    "light": #ffffff,
+    "dark": #ffffff,
+  ),
+  "primary-fixed": (
+    "on": "on-primary-fixed",
+    "light": #fbe1cf,
+    "dark": #fbe1cf,
+  ),
+  "primary-fixed-dim": (
+    "on": "on-primary-fixed",
+    "light": #f6c19c,
+    "dark": #f6c19c,
+  ),
+  "secondary": (
+    "on": "on-secondary",
+    "light": #f5f5f4,
+    "dark": #292524,
+  ),
+  "on-secondary": (
+    "on": "secondary",
+    "light": #000000,
+    "dark": #ffffff,
+  ),
+  "secondary-container": (
+    "on": "on-secondary-container",
+    "light": #f5f5f4,
+    "dark": #292524,
+  ),
+  "on-secondary-container": (
+    "on": "secondary-container",
+    "light": #000000,
+    "dark": #ffffff,
+  ),
+  "secondary-fixed": (
+    "on": "on-secondary-fixed",
+    "light": #fafafa,
+    "dark": #fafafa,
+  ),
+  "secondary-fixed-dim": (
+    "on": "on-secondary-fixed",
+    "light": #f1f1f1,
+    "dark": #f1f1f1,
+  ),
+  "tertiary": (
+    "on": "on-tertiary",
+    "light": #f5f5f4,
+    "dark": #292524,
+  ),
+  "on-tertiary": (
+    "on": "tertiary",
+    "light": #000000,
+    "dark": #ffffff,
+  ),
+  "tertiary-container": (
+    "on": "on-tertiary-container",
+    "light": #f5f5f4,
+    "dark": #292524,
+  ),
+  "on-tertiary-container": (
+    "on": "tertiary-container",
+    "light": #000000,
+    "dark": #ffffff,
+  ),
+  "tertiary-fixed": (
+    "on": "on-tertiary-fixed",
+    "light": #fafafa,
+    "dark": #fafafa,
+  ),
+  "tertiary-fixed-dim": (
+    "on": "on-tertiary-fixed",
+    "light": #f1f1f1,
+    "dark": #f1f1f1,
+  ),
+  "on-primary-fixed": (
+    "on": "primary-fixed",
+    "light": #773203,
+    "dark": #773203,
+  ),
+  "on-primary-fixed-variant": (
+    "on": "primary-fixed-dim",
+    "light": #883a03,
+    "dark": #883a03,
+  ),
+  "on-secondary-fixed": (
+    "on": "secondary-fixed",
+    "light": #4d4d46,
+    "dark": #4d4d46,
+  ),
+  "on-secondary-fixed-variant": (
+    "on": "secondary-fixed-dim",
+    "light": #6f6f64,
+    "dark": #6f6f64,
+  ),
+  "on-tertiary-fixed": (
+    "on": "tertiary-fixed",
+    "light": #4d4d46,
+    "dark": #4d4d46,
+  ),
+  "on-tertiary-fixed-variant": (
+    "on": "tertiary-fixed-dim",
+    "light": #6f6f64,
+    "dark": #6f6f64,
+  ),
+  "error": (
+    "on": "on-error",
+    "light": #ef4444,
+    "dark": #dc2626,
+  ),
+  "on-error": (
+    "on": "error",
+    "light": #ffffff,
+    "dark": #ffffff,
+  ),
+  "error-container": (
+    "on": "on-error-container",
+    "light": #ffe6e6,
+    "dark": #9c1919,
+  ),
+  "on-error-container": (
+    "on": "error-container",
+    "light": #000000,
+    "dark": #ffffff,
+  ),
+  "surface": (
+    "on": "on-surface",
+    "light": #fcfcfc,
+    "dark": #080808,
+  ),
+  "on-surface": (
+    "on": "surface",
+    "light": #111111,
+    "dark": #f1f1f1,
+  ),
+  "on-surface-variant": (
+    "on": "surface",
+    "light": #393939,
+    "dark": #cacaca,
+  ),
+  "surface-dim": (
+    "on": "on-surface",
+    "light": #e0e0e0,
+    "dark": #060606,
+  ),
+  "surface-bright": (
+    "on": "on-surface",
+    "light": #fdfdfd,
+    "dark": #2c2c2c,
+  ),
+  "surface-container-lowest": (
+    "on": "on-surface",
+    "light": #ffffff,
+    "dark": #010101,
+  ),
+  "surface-container-low": (
+    "on": "on-surface",
+    "light": #f8f8f8,
+    "dark": #0e0e0e,
+  ),
+  "surface-container": (
+    "on": "on-surface",
+    "light": #f3f3f3,
+    "dark": #151515,
+  ),
+  "surface-container-high": (
+    "on": "on-surface",
+    "light": #ededed,
+    "dark": #1d1d1d,
+  ),
+  "surface-container-highest": (
+    "on": "on-surface",
+    "light": #e7e7e7,
+    "dark": #282828,
+  ),
+  "outline": (
+    "on": "on-surface",
+    "light": #919191,
+    "dark": #777777,
+  ),
+  "outline-variant": (
+    "on": "on-surface",
+    "light": #d1d1d1,
+    "dark": #414141,
+  ),
+  "shadow": (
+    "on": "on-surface",
+    "light": #000000,
+    "dark": #000000,
+  ),
+  "scrim": (
+    "on": "on-surface",
+    "light": #000000,
+    "dark": #000000,
+  ),
+  "surface-tint": (
+    "on": "on-primary",
+    "light": #f97316,
+    "dark": #ea580c,
+  ),
+  "inverse-surface": (
+    "on": "on-inverse-surface",
+    "light": #2a2a2a,
+    "dark": #e8e8e8,
+  ),
+  "on-inverse-surface": (
+    "on": "inverse-surface",
+    "light": #f1f1f1,
+    "dark": #2a2a2a,
+  ),
+  "inverse-primary": (
+    "on": "on-inverse-surface",
+    "light": #ffe8af,
+    "dark": #682d0f,
+  ),
+  "success": (
+    "on": "on-success",
+    "light": #16a34a,
+    "dark": #22c55e,
+  ),
+  "on-success": (
+    "on": "success",
+    "light": #ffffff,
+    "dark": #ffffff,
+  ),
+  "success-container": (
+    "on": "on-success-container",
+    "light": #dcfce7,
+    "dark": #14532d,
+  ),
+  "on-success-container": (
+    "on": "success-container",
+    "light": #14532d,
+    "dark": #dcfce7,
+  ),
+);
+
+$vars: ();
+
+@each $key, $value in $data {
+  $on-pair: map-get($value, "on");
+  $vars: map-merge(
+    $map1: $vars,
+    $map2: (
+        "#{$key}": (
+            "var": var(--#{$key}),
+            "on-var": var(--#{$on-pair}),
+          ),
+      ),
+  );
+}
+
+@mixin set-color-vars($mode) {
+  @each $key, $value in $data {
+    --#{$key}: #{map-get($value, $mode)};
+  }
+}
+
+@mixin set {
+  :root,
+  [data-theme="light"] {
+    @include set-color-vars("light");
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      @include set-color-vars("dark");
+    }
+  }
+
+  [data-theme="dark"] {
+    @include set-color-vars("dark");
+  }
+}
+
+@function get($keys...) {
+  @return map.get($vars, $keys...);
+}

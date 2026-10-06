@@ -1,0 +1,9 @@
+@use "../def/radius";
+
+@mixin set {
+  @each $key, $value in radius.$vars {
+    [cha-rad="#{$key}"] {
+      border-radius: $value;
+    }
+  }
+}

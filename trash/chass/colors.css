@@ -1,0 +1,624 @@
+/* ======================================================
+   VARIABLES POR DEFECTO PARA LOS ATRIBUTOS
+   ====================================================== */
+:root {
+  --cha-bd: initial;
+  --cha-bg: transparent;
+  --cha-c: var(--on-surface);
+}
+
+* {
+  border-color: var(--cha-bd);
+  background-color: var(--cha-bg);
+  color: var(--cha-c);
+}
+
+/* ======================================================
+   cha-bd (BORDES)
+   ====================================================== */
+[cha-bd] {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--cha-bd);
+}
+[cha-bd]:disabled {
+  opacity: 0.38;
+}
+
+/* Asignación de colores para cha-bd */
+[cha-bd="primary"] {
+  --cha-bd: var(--primary);
+  --cha-c: var(--primary);
+}
+
+[cha-bd="on-primary"] {
+  --cha-bd: var(--on-primary);
+  --cha-c: var(--on-primary);
+}
+[cha-bd="primary-container"] {
+  --cha-bd: var(--primary-container);
+  --cha-c: var(--primary-container);
+}
+[cha-bd="on-primary-container"] {
+  --cha-bd: var(--on-primary-container);
+  --cha-c: var(--on-primary-container);
+}
+[cha-bd="primary-fixed"] {
+  --cha-bd: var(--primary-fixed);
+  --cha-c: var(--primary-fixed);
+}
+[cha-bd="primary-fixed-dim"] {
+  --cha-bd: var(--primary-fixed-dim);
+  --cha-c: var(--primary-fixed-dim);
+}
+[cha-bd="on-primary-fixed"] {
+  --cha-bd: var(--on-primary-fixed);
+  --cha-c: var(--on-primary-fixed);
+}
+[cha-bd="on-primary-fixed-variant"] {
+  --cha-bd: var(--on-primary-fixed-variant);
+  --cha-c: var(--on-primary-fixed-variant);
+}
+
+[cha-bd="secondary"] {
+  --cha-bd: var(--secondary);
+  --cha-c: var(--secondary);
+}
+[cha-bd="on-secondary"] {
+  --cha-bd: var(--on-secondary);
+  --cha-c: var(--on-secondary);
+}
+[cha-bd="secondary-container"] {
+  --cha-bd: var(--secondary-container);
+  --cha-c: var(--secondary-container);
+}
+[cha-bd="on-secondary-container"] {
+  --cha-bd: var(--on-secondary-container);
+  --cha-c: var(--on-secondary-container);
+}
+[cha-bd="secondary-fixed"] {
+  --cha-bd: var(--secondary-fixed);
+  --cha-c: var(--secondary-fixed);
+}
+[cha-bd="secondary-fixed-dim"] {
+  --cha-bd: var(--secondary-fixed-dim);
+  --cha-c: var(--secondary-fixed-dim);
+}
+[cha-bd="on-secondary-fixed"] {
+  --cha-bd: var(--on-secondary-fixed);
+  --cha-c: var(--on-secondary-fixed);
+}
+[cha-bd="on-secondary-fixed-variant"] {
+  --cha-bd: var(--on-secondary-fixed-variant);
+  --cha-c: var(--on-secondary-fixed-variant);
+}
+
+[cha-bd="tertiary"] {
+  --cha-bd: var(--tertiary);
+  --cha-c: var(--tertiary);
+}
+[cha-bd="on-tertiary"] {
+  --cha-bd: var(--on-tertiary);
+  --cha-c: var(--on-tertiary);
+}
+[cha-bd="tertiary-container"] {
+  --cha-bd: var(--tertiary-container);
+  --cha-c: var(--tertiary-container);
+}
+[cha-bd="on-tertiary-container"] {
+  --cha-bd: var(--on-tertiary-container);
+  --cha-c: var(--on-tertiary-container);
+}
+[cha-bd="tertiary-fixed"] {
+  --cha-bd: var(--tertiary-fixed);
+  --cha-c: var(--tertiary-fixed);
+}
+[cha-bd="tertiary-fixed-dim"] {
+  --cha-bd: var(--tertiary-fixed-dim);
+  --cha-c: var(--tertiary-fixed-dim);
+}
+[cha-bd="on-tertiary-fixed"] {
+  --cha-bd: var(--on-tertiary-fixed);
+  --cha-c: var(--on-tertiary-fixed);
+}
+[cha-bd="on-tertiary-fixed-variant"] {
+  --cha-bd: var(--on-tertiary-fixed-variant);
+  --cha-c: var(--on-tertiary-fixed-variant);
+}
+
+[cha-bd="error"] {
+  --cha-bd: var(--error);
+  --cha-c: var(--error);
+}
+[cha-bd="on-error"] {
+  --cha-bd: var(--on-error);
+  --cha-c: var(--on-error);
+}
+[cha-bd="error-container"] {
+  --cha-bd: var(--error-container);
+  --cha-c: var(--error-container);
+}
+[cha-bd="on-error-container"] {
+  --cha-bd: var(--on-error-container);
+  --cha-c: var(--on-error-container);
+}
+
+[cha-bd="surface"] {
+  --cha-bd: var(--surface);
+  --cha-c: var(--surface);
+}
+[cha-bd="on-surface"] {
+  --cha-bd: var(--on-surface);
+  --cha-c: var(--on-surface);
+}
+[cha-bd="on-surface-variant"] {
+  --cha-bd: var(--on-surface-variant);
+  --cha-c: var(--on-surface-variant);
+}
+[cha-bd="surface-dim"] {
+  --cha-bd: var(--surface-dim);
+  --cha-c: var(--surface-dim);
+}
+[cha-bd="surface-bright"] {
+  --cha-bd: var(--surface-bright);
+  --cha-c: var(--surface-bright);
+}
+[cha-bd="surface-container-lowest"] {
+  --cha-bd: var(--surface-container-lowest);
+  --cha-c: var(--surface-container-lowest);
+}
+[cha-bd="surface-container-low"] {
+  --cha-bd: var(--surface-container-low);
+  --cha-c: var(--surface-container-low);
+}
+[cha-bd="surface-container"] {
+  --cha-bd: var(--surface-container);
+  --cha-c: var(--surface-container);
+}
+[cha-bd="surface-container-high"] {
+  --cha-bd: var(--surface-container-high);
+  --cha-c: var(--surface-container-high);
+}
+[cha-bd="surface-container-highest"] {
+  --cha-bd: var(--surface-container-highest);
+  --cha-c: var(--surface-container-highest);
+}
+
+[cha-bd="outline"] {
+  --cha-bd: var(--outline);
+  --cha-c: var(--outline);
+}
+[cha-bd="outline-variant"] {
+  --cha-bd: var(--outline-variant);
+  --cha-c: var(--outline-variant);
+}
+[cha-bd="shadow"] {
+  --cha-bd: var(--shadow);
+  --cha-c: var(--shadow);
+}
+[cha-bd="scrim"] {
+  --cha-bd: var(--scrim);
+  --cha-c: var(--scrim);
+}
+[cha-bd="surface-tint"] {
+  --cha-bd: var(--surface-tint);
+  --cha-c: var(--surface-tint);
+}
+
+[cha-bd="inverse-surface"] {
+  --cha-bd: var(--inverse-surface);
+  --cha-c: var(--inverse-surface);
+}
+[cha-bd="on-inverse-surface"] {
+  --cha-bd: var(--on-inverse-surface);
+  --cha-c: var(--on-inverse-surface);
+}
+[cha-bd="inverse-primary"] {
+  --cha-bd: var(--inverse-primary);
+  --cha-c: var(--inverse-primary);
+}
+
+[cha-bd="success"] {
+  --cha-bd: var(--success);
+  --cha-c: var(--success);
+}
+[cha-bd="on-success"] {
+  --cha-bd: var(--on-success);
+  --cha-c: var(--on-success);
+}
+[cha-bd="success-container"] {
+  --cha-bd: var(--success-container);
+  --cha-c: var(--success-container);
+}
+[cha-bd="on-success-container"] {
+  --cha-bd: var(--on-success-container);
+  --cha-c: var(--on-success-container);
+}
+
+/* ======================================================
+   cha-bg (FONDOS + color de texto asociado)
+   ====================================================== */
+[cha-bg] {
+  background-color: var(--cha-bg);
+  color: var(--cha-c); /* hereda el color de texto definido en la asignación */
+}
+
+/* Asignación de colores para cha-bg (fondo y texto) */
+[cha-bg="transparent"] {
+  --cha-bg: transparent;
+  --cha-c: inherit; /* o el que corresponda */
+}
+
+[cha-bg="primary"] {
+  --cha-bg: var(--primary);
+  --cha-c: var(--on-primary);
+}
+[cha-bg="on-primary"] {
+  --cha-bg: var(--on-primary);
+  --cha-c: var(--primary);
+}
+[cha-bg="primary-container"] {
+  --cha-bg: var(--primary-container);
+  --cha-c: var(--on-primary-container);
+}
+[cha-bg="on-primary-container"] {
+  --cha-bg: var(--on-primary-container);
+  --cha-c: var(--primary-container);
+}
+[cha-bg="primary-fixed"] {
+  --cha-bg: var(--primary-fixed);
+  --cha-c: var(--on-primary-fixed);
+}
+[cha-bg="on-primary-fixed"] {
+  --cha-bg: var(--on-primary-fixed);
+  --cha-c: var(--primary-fixed);
+}
+[cha-bg="primary-fixed-dim"] {
+  --cha-bg: var(--primary-fixed-dim);
+  --cha-c: var(--on-primary-fixed);
+}
+[cha-bg="on-primary-fixed-variant"] {
+  --cha-bg: var(--on-primary-fixed-variant);
+  --cha-c: var(--primary-fixed);
+}
+
+[cha-bg="secondary"] {
+  --cha-bg: var(--secondary);
+  --cha-c: var(--on-secondary);
+}
+[cha-bg="on-secondary"] {
+  --cha-bg: var(--on-secondary);
+  --cha-c: var(--secondary);
+}
+[cha-bg="secondary-container"] {
+  --cha-bg: var(--secondary-container);
+  --cha-c: var(--on-secondary-container);
+}
+[cha-bg="on-secondary-container"] {
+  --cha-bg: var(--on-secondary-container);
+  --cha-c: var(--secondary-container);
+}
+[cha-bg="secondary-fixed"] {
+  --cha-bg: var(--secondary-fixed);
+  --cha-c: var(--on-secondary-fixed);
+}
+[cha-bg="on-secondary-fixed"] {
+  --cha-bg: var(--on-secondary-fixed);
+  --cha-c: var(--secondary-fixed);
+}
+[cha-bg="secondary-fixed-dim"] {
+  --cha-bg: var(--secondary-fixed-dim);
+  --cha-c: var(--on-secondary-fixed);
+}
+[cha-bg="on-secondary-fixed-variant"] {
+  --cha-bg: var(--on-secondary-fixed-variant);
+  --cha-c: var(--secondary-fixed);
+}
+
+[cha-bg="tertiary"] {
+  --cha-bg: var(--tertiary);
+  --cha-c: var(--on-tertiary);
+}
+[cha-bg="on-tertiary"] {
+  --cha-bg: var(--on-tertiary);
+  --cha-c: var(--tertiary);
+}
+[cha-bg="tertiary-container"] {
+  --cha-bg: var(--tertiary-container);
+  --cha-c: var(--on-tertiary-container);
+}
+[cha-bg="on-tertiary-container"] {
+  --cha-bg: var(--on-tertiary-container);
+  --cha-c: var(--tertiary-container);
+}
+[cha-bg="tertiary-fixed"] {
+  --cha-bg: var(--tertiary-fixed);
+  --cha-c: var(--on-tertiary-fixed);
+}
+[cha-bg="on-tertiary-fixed"] {
+  --cha-bg: var(--on-tertiary-fixed);
+  --cha-c: var(--tertiary-fixed);
+}
+[cha-bg="tertiary-fixed-dim"] {
+  --cha-bg: var(--tertiary-fixed-dim);
+  --cha-c: var(--on-tertiary-fixed);
+}
+[cha-bg="on-tertiary-fixed-variant"] {
+  --cha-bg: var(--on-tertiary-fixed-variant);
+  --cha-c: var(--tertiary-fixed);
+}
+
+[cha-bg="error"] {
+  --cha-bg: var(--error);
+  --cha-c: var(--on-error);
+}
+[cha-bg="on-error"] {
+  --cha-bg: var(--on-error);
+  --cha-c: var(--error);
+}
+[cha-bg="error-container"] {
+  --cha-bg: var(--error-container);
+  --cha-c: var(--on-error-container);
+}
+[cha-bg="on-error-container"] {
+  --cha-bg: var(--on-error-container);
+  --cha-c: var(--error-container);
+}
+
+[cha-bg="surface"] {
+  --cha-bg: var(--surface);
+  --cha-c: var(--on-surface);
+}
+[cha-bg="on-surface"] {
+  --cha-bg: var(--on-surface);
+  --cha-c: var(--surface);
+}
+[cha-bg="on-surface-variant"] {
+  --cha-bg: var(--on-surface-variant);
+  --cha-c: var(--surface);
+}
+[cha-bg="surface-dim"] {
+  --cha-bg: var(--surface-dim);
+  --cha-c: var(--on-surface);
+}
+[cha-bg="surface-bright"] {
+  --cha-bg: var(--surface-bright);
+  --cha-c: var(--on-surface);
+}
+[cha-bg="surface-container-lowest"] {
+  --cha-bg: var(--surface-container-lowest);
+  --cha-c: var(--on-surface);
+}
+[cha-bg="surface-container-low"] {
+  --cha-bg: var(--surface-container-low);
+  --cha-c: var(--on-surface);
+}
+[cha-bg="surface-container"] {
+  --cha-bg: var(--surface-container);
+  --cha-c: var(--on-surface);
+}
+[cha-bg="surface-container-high"] {
+  --cha-bg: var(--surface-container-high);
+  --cha-c: var(--on-surface);
+}
+[cha-bg="surface-container-highest"] {
+  --cha-bg: var(--surface-container-highest);
+  --cha-c: var(--on-surface);
+}
+
+[cha-bg="outline"] {
+  --cha-bg: var(--outline);
+  --cha-c: var(--surface);
+}
+[cha-bg="outline-variant"] {
+  --cha-bg: var(--outline-variant);
+  --cha-c: var(--surface);
+}
+[cha-bg="shadow"] {
+  --cha-bg: var(--shadow);
+  --cha-c: var(--on-surface);
+}
+[cha-bg="scrim"] {
+  --cha-bg: var(--scrim);
+  --cha-c: var(--on-surface);
+}
+[cha-bg="surface-tint"] {
+  --cha-bg: var(--surface-tint);
+  --cha-c: var(--on-primary);
+}
+
+[cha-bg="inverse-surface"] {
+  --cha-bg: var(--inverse-surface);
+  --cha-c: var(--on-inverse-surface);
+}
+[cha-bg="on-inverse-surface"] {
+  --cha-bg: var(--on-inverse-surface);
+  --cha-c: var(--inverse-surface);
+}
+[cha-bg="inverse-primary"] {
+  --cha-bg: var(--inverse-primary);
+  --cha-c: var(--primary);
+}
+
+[cha-bg="success"] {
+  --cha-bg: var(--success);
+  --cha-c: var(--on-success);
+}
+[cha-bg="on-success"] {
+  --cha-bg: var(--on-success);
+  --cha-c: var(--success);
+}
+[cha-bg="success-container"] {
+  --cha-bg: var(--success-container);
+  --cha-c: var(--on-success-container);
+}
+[cha-bg="on-success-container"] {
+  --cha-bg: var(--on-success-container);
+  --cha-c: var(--success-container);
+}
+
+/* ======================================================
+   cha-c (SOLO TEXTO)
+   ====================================================== */
+[cha-c] {
+  color: var(--cha-c);
+}
+
+/* Asignación de colores para cha-c */
+[cha-c="primary"] {
+  --cha-c: var(--primary);
+}
+[cha-c="on-primary"] {
+  --cha-c: var(--on-primary);
+}
+[cha-c="primary-container"] {
+  --cha-c: var(--primary-container);
+}
+[cha-c="on-primary-container"] {
+  --cha-c: var(--on-primary-container);
+}
+[cha-c="primary-fixed"] {
+  --cha-c: var(--primary-fixed);
+}
+[cha-c="primary-fixed-dim"] {
+  --cha-c: var(--primary-fixed-dim);
+}
+[cha-c="on-primary-fixed"] {
+  --cha-c: var(--on-primary-fixed);
+}
+[cha-c="on-primary-fixed-variant"] {
+  --cha-c: var(--on-primary-fixed-variant);
+}
+
+[cha-c="secondary"] {
+  --cha-c: var(--secondary);
+}
+[cha-c="on-secondary"] {
+  --cha-c: var(--on-secondary);
+}
+[cha-c="secondary-container"] {
+  --cha-c: var(--secondary-container);
+}
+[cha-c="on-secondary-container"] {
+  --cha-c: var(--on-secondary-container);
+}
+[cha-c="secondary-fixed"] {
+  --cha-c: var(--secondary-fixed);
+}
+[cha-c="secondary-fixed-dim"] {
+  --cha-c: var(--secondary-fixed-dim);
+}
+[cha-c="on-secondary-fixed"] {
+  --cha-c: var(--on-secondary-fixed);
+}
+[cha-c="on-secondary-fixed-variant"] {
+  --cha-c: var(--on-secondary-fixed-variant);
+}
+
+[cha-c="tertiary"] {
+  --cha-c: var(--tertiary);
+}
+[cha-c="on-tertiary"] {
+  --cha-c: var(--on-tertiary);
+}
+[cha-c="tertiary-container"] {
+  --cha-c: var(--tertiary-container);
+}
+[cha-c="on-tertiary-container"] {
+  --cha-c: var(--on-tertiary-container);
+}
+[cha-c="tertiary-fixed"] {
+  --cha-c: var(--tertiary-fixed);
+}
+[cha-c="tertiary-fixed-dim"] {
+  --cha-c: var(--tertiary-fixed-dim);
+}
+[cha-c="on-tertiary-fixed"] {
+  --cha-c: var(--on-tertiary-fixed);
+}
+[cha-c="on-tertiary-fixed-variant"] {
+  --cha-c: var(--on-tertiary-fixed-variant);
+}
+
+[cha-c="error"] {
+  --cha-c: var(--error);
+}
+[cha-c="on-error"] {
+  --cha-c: var(--on-error);
+}
+[cha-c="error-container"] {
+  --cha-c: var(--error-container);
+}
+[cha-c="on-error-container"] {
+  --cha-c: var(--on-error-container);
+}
+
+[cha-c="surface"] {
+  --cha-c: var(--surface);
+}
+[cha-c="on-surface"] {
+  --cha-c: var(--on-surface);
+}
+[cha-c="on-surface-variant"] {
+  --cha-c: var(--on-surface-variant);
+}
+[cha-c="surface-dim"] {
+  --cha-c: var(--surface-dim);
+}
+[cha-c="surface-bright"] {
+  --cha-c: var(--surface-bright);
+}
+[cha-c="surface-container-lowest"] {
+  --cha-c: var(--surface-container-lowest);
+}
+[cha-c="surface-container-low"] {
+  --cha-c: var(--surface-container-low);
+}
+[cha-c="surface-container"] {
+  --cha-c: var(--surface-container);
+}
+[cha-c="surface-container-high"] {
+  --cha-c: var(--surface-container-high);
+}
+[cha-c="surface-container-highest"] {
+  --cha-c: var(--surface-container-highest);
+}
+
+[cha-c="outline"] {
+  --cha-c: var(--outline);
+}
+[cha-c="outline-variant"] {
+  --cha-c: var(--outline-variant);
+}
+[cha-c="shadow"] {
+  --cha-c: var(--shadow);
+}
+[cha-c="scrim"] {
+  --cha-c: var(--scrim);
+}
+[cha-c="surface-tint"] {
+  --cha-c: var(--surface-tint);
+}
+
+[cha-c="inverse-surface"] {
+  --cha-c: var(--inverse-surface);
+}
+[cha-c="on-inverse-surface"] {
+  --cha-c: var(--on-inverse-surface);
+}
+[cha-c="inverse-primary"] {
+  --cha-c: var(--inverse-primary);
+}
+
+[cha-c="success"] {
+  --cha-c: var(--success);
+}
+[cha-c="on-success"] {
+  --cha-c: var(--on-success);
+}
+[cha-c="success-container"] {
+  --cha-c: var(--success-container);
+}
+[cha-c="on-success-container"] {
+  --cha-c: var(--on-success-container);
+}

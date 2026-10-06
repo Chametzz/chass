@@ -1,0 +1,67 @@
+/* Radius Utilities */
+[cha-rad="none"] {
+  border-radius: var(--cha-rad-none);
+}
+[cha-rad="xs"] {
+  border-radius: var(--cha-rad-xs);
+}
+[cha-rad="sm"] {
+  border-radius: var(--cha-rad-sm);
+}
+[cha-rad="md"] {
+  border-radius: var(--cha-rad-md);
+}
+[cha-rad="lg"] {
+  border-radius: var(--cha-rad-lg);
+}
+[cha-rad="xl"] {
+  border-radius: var(--cha-rad-xl);
+}
+[cha-rad="full"] {
+  border-radius: var(--cha-rad-full);
+}
+
+/* Global Button Radius Attribute Overrides */
+[cha-button-radius="none"] {
+  --cha-button-rad: var(--cha-rad-none);
+}
+[cha-button-radius="xs"] {
+  --cha-button-rad: var(--cha-rad-xs);
+}
+[cha-button-radius="sm"] {
+  --cha-button-rad: var(--cha-rad-sm);
+}
+[cha-button-radius="md"] {
+  --cha-button-rad: var(--cha-rad-md);
+}
+[cha-button-radius="lg"] {
+  --cha-button-rad: var(--cha-rad-lg);
+}
+[cha-button-radius="xl"] {
+  --cha-button-rad: var(--cha-rad-xl);
+}
+[cha-button-radius="full"] {
+  --cha-button-rad: var(--cha-rad-full);
+}
+
+[cha-input-radius="none"] {
+  --cha-input-rad: var(--cha-rad-none);
+}
+[cha-input-radius="xs"] {
+  --cha-input-rad: var(--cha-rad-xs);
+}
+[cha-input-radius="sm"] {
+  --cha-input-rad: var(--cha-rad-sm);
+}
+[cha-input-radius="md"] {
+  --cha-input-rad: var(--cha-rad-md);
+}
+[cha-input-radius="lg"] {
+  --cha-input-rad: var(--cha-rad-lg);
+}
+[cha-input-radius="xl"] {
+  --cha-input-rad: var(--cha-rad-xl);
+}
+[cha-input-radius="full"] {
+  --cha-input-rad: var(--cha-rad-full);
+}

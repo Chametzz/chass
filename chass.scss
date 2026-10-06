@@ -1,0 +1,44 @@
+@use "def/color";
+@use "def/font-size";
+@use "def/space";
+@use "def/radius";
+@use "def/elevation";
+@use "def/font-weight";
+@use "impl/color-impl";
+@use "impl/font-size-impl";
+@use "impl/radius-impl";
+@use "impl/space-impl";
+@use "impl/layout-impl";
+@use "impl/elevation-impl";
+@use "impl/text-align-impl";
+@use "mod/base-mod";
+@use "mod/button-mod";
+@use "mod/input-mod";
+@use "mod/field-mod";
+@use "mod/text-mod";
+
+@include color.set;
+
+:root {
+  @include font-size.set;
+  @include font-weight.set;
+  @include space.set;
+  @include radius.set;
+  @include elevation.set;
+}
+
+@include base-mod.set;
+@include text-mod.set;
+@include input-mod.set;
+@include button-mod.set;
+@include field-mod.set;
+
+@include layout-impl.set;
+@include space-impl.set;
+
+@include font-size-impl.set;
+@include text-align-impl.set;
+
+@include elevation-impl.set;
+@include radius-impl.set;
+@include color-impl.set;

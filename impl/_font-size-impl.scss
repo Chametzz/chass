@@ -1,0 +1,9 @@
+@use "../def/font-size";
+
+@mixin set {
+  @each $key, $value in font-size.$vars {
+    [cha-fs="#{$key}"] {
+      font-size: $value;
+    }
+  }
+}

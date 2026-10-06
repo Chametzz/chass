@@ -1,0 +1,28 @@
+@use "../def/color";
+@use "sass:map";
+
+@mixin set {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    --cha-bd: #{color.get("outline", "var")};
+    --cha-bg: transparent;
+    --cha-c: #{color.get("surface", "on-var")};
+
+    border-color: var(--cha-bd);
+    background-color: var(--cha-bg);
+    color: var(--cha-c);
+  }
+
+  body {
+    --cha-bg: #{color.get("surface", "var")};
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,36 @@
+@use "../def/space";
+@use "../def/radius";
+@use "../def/font-size";
+@use "sass:map";
+
+@mixin set {
+  button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    font-size: #{font-size.get("body-lg")};
+    padding: #{space.get("2xs")} #{space.get("xs")};
+    width: fit-content;
+    border-style: none;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border-radius: #{radius.get("xs")};
+
+    &:not(:disabled) {
+      &:hover {
+        border-color: color-mix(in srgb, var(--cha-c) 15%, var(--cha-bd));
+        background-color: color-mix(in srgb, var(--cha-c) 15%, var(--cha-bg));
+      }
+      &:active {
+        border-color: color-mix(in srgb, var(--cha-c) 15%, var(--cha-bd));
+        background-color: color-mix(in srgb, var(--cha-c) 35%, var(--cha-bg));
+      }
+    }
+
+    &:disabled {
+      opacity: 0.38;
+      cursor: not-allowed;
+    }
+  }
+}

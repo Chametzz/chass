@@ -1,0 +1,175 @@
+* {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+:root {
+  --display-large: 57px;
+  --display-medium: 45px;
+  --display-small: 36px;
+
+  --headline-large: 32px;
+  --headline-medium: 28px;
+  --headline-small: 24px;
+
+  --title-large: 22px;
+  --title-medium: 16px;
+  --title-small: 14px;
+
+  --body-large: 16px;
+  --body-medium: 14px;
+  --body-small: 12px;
+
+  --label-large: 14px;
+  --label-medium: 12px;
+  --label-small: 11px;
+}
+
+/*Default*/
+* {
+  font-size: var(--body-large);
+}
+
+h1 {
+  font-size: var(--headline-large);
+  line-height: 1.25;
+  font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--headline-medium);
+  line-height: 1.28;
+  font-weight: 600;
+  margin: 0;
+}
+
+h3 {
+  font-size: var(--headline-small);
+  line-height: 1.33;
+  font-weight: 600;
+  margin: 0;
+}
+
+h4 {
+  font-size: var(--title-large);
+  line-height: 1.27;
+  font-weight: 600;
+  margin: 0;
+}
+
+h5 {
+  font-size: var(--title-medium);
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: 0.15px;
+  margin: 0;
+}
+
+h6 {
+  font-size: var(--title-small);
+  line-height: 1.43;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  margin: 0;
+}
+
+.display-large {
+  font-size: var(--display-large);
+  line-height: 1.12;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+}
+.display-medium {
+  font-size: var(--display-medium);
+  line-height: 1.15;
+  font-weight: 400;
+}
+.display-small {
+  font-size: var(--display-small);
+  line-height: 1.22;
+  font-weight: 400;
+}
+
+/* Headline */
+.headline-large {
+  font-size: var(--headline-large);
+  line-height: 1.25;
+  font-weight: 400;
+}
+.headline-medium {
+  font-size: var(--headline-medium);
+  line-height: 1.28;
+  font-weight: 400;
+}
+.headline-small {
+  font-size: var(--headline-small);
+  line-height: 1.33;
+  font-weight: 400;
+}
+
+.title-large {
+  font-size: var(--title-large);
+  line-height: 1.27;
+  font-weight: 400;
+}
+.title-medium {
+  font-size: var(--title-medium);
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+}
+.title-small {
+  font-size: var(--title-small);
+  line-height: 1.43;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+
+.body-large {
+  font-size: var(--body-large);
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.body-medium {
+  font-size: var(--body-medium);
+  line-height: 1.43;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+}
+.body-small {
+  font-size: var(--body-small);
+  line-height: 1.33;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+.label-large {
+  font-size: var(--label-large);
+  line-height: 1.43;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+.label-medium {
+  font-size: var(--label-medium);
+  line-height: 1.33;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.label-small {
+  font-size: var(--label-small);
+  line-height: 1.45;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}

@@ -1,0 +1,40 @@
+@use "../def/color";
+@use "../def/space";
+@use "../def/radius";
+@use "sass:map";
+
+@mixin set {
+  input,
+  textarea,
+  select {
+    width: 100%;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    --cha-bd: #{color.get("on-surface", "var")};
+    padding: #{space.get("2xs")};
+    border-radius: #{radius.get("xs")};
+
+    &::placeholder {
+      color: #{color.get("outline", "var")};
+    }
+
+    &:focus {
+      --cha-bd: #{color.get("primary", "var")};
+    }
+
+    &:disabled {
+      opacity: 0.38;
+      cursor: not-allowed;
+    }
+  }
+
+  option {
+    --cha-bg: #{color.get("surface", "var")};
+    --cha-c: #{color.get("on-surface", "var")};
+
+    &:disabled {
+      color: #{color.get("outline", "var")};
+    }
+  }
+}

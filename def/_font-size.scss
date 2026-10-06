@@ -1,0 +1,30 @@
+@use "utils" as u;
+@use "sass:map";
+
+$data: (
+  "display-lg": 3.5rem,
+  "display-md": 2.8125rem,
+  "display-sm": 2.25rem,
+  "headline-lg": 2rem,
+  "headline-md": 1.75rem,
+  "headline-sm": 1.5rem,
+  "title-lg": 1.375rem,
+  "title-md": 1rem,
+  "title-sm": 0.875rem,
+  "body-lg": 1rem,
+  "body-md": 0.875rem,
+  "body-sm": 0.75rem,
+  "label-lg": 0.875rem,
+  "label-md": 0.75rem,
+  "label-sm": 0.6875rem,
+);
+
+$vars: u.map-to-vars($data);
+
+@mixin set {
+  @include u.emit-vars($data);
+}
+
+@function get($keys...) {
+  @return map.get($vars, $keys...);
+}

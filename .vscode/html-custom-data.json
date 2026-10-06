@@ -1,0 +1,341 @@
+{
+  "version": 1.1,
+  "valueSets": [
+    {
+      "name": "v",
+      "values": []
+    },
+    {
+      "name": "colorTokens",
+      "values": [
+        { "name": "primary" },
+        { "name": "on-primary" },
+        { "name": "primary-container" },
+        { "name": "on-primary-container" },
+        { "name": "primary-fixed" },
+        { "name": "primary-fixed-dim" },
+        { "name": "secondary" },
+        { "name": "on-secondary" },
+        { "name": "secondary-container" },
+        { "name": "on-secondary-container" },
+        { "name": "secondary-fixed" },
+        { "name": "secondary-fixed-dim" },
+        { "name": "tertiary" },
+        { "name": "on-tertiary" },
+        { "name": "tertiary-container" },
+        { "name": "on-tertiary-container" },
+        { "name": "tertiary-fixed" },
+        { "name": "tertiary-fixed-dim" },
+        { "name": "on-primary-fixed" },
+        { "name": "on-primary-fixed-variant" },
+        { "name": "on-secondary-fixed" },
+        { "name": "on-secondary-fixed-variant" },
+        { "name": "on-tertiary-fixed" },
+        { "name": "on-tertiary-fixed-variant" },
+        { "name": "error" },
+        { "name": "on-error" },
+        { "name": "error-container" },
+        { "name": "on-error-container" },
+        { "name": "surface" },
+        { "name": "on-surface" },
+        { "name": "on-surface-variant" },
+        { "name": "surface-dim" },
+        { "name": "surface-bright" },
+        { "name": "surface-container-lowest" },
+        { "name": "surface-container-low" },
+        { "name": "surface-container" },
+        { "name": "surface-container-high" },
+        { "name": "surface-container-highest" },
+        { "name": "outline" },
+        { "name": "outline-variant" },
+        { "name": "shadow" },
+        { "name": "scrim" },
+        { "name": "surface-tint" },
+        { "name": "inverse-surface" },
+        { "name": "on-inverse-surface" },
+        { "name": "inverse-primary" },
+        { "name": "success" },
+        { "name": "on-success" },
+        { "name": "success-container" },
+        { "name": "on-success-container" },
+        { "name": "transparent" }
+      ]
+    },
+    {
+      "name": "spacing",
+      "values": [
+        { "name": "none" },
+        { "name": "3xs" },
+        { "name": "2xs" },
+        { "name": "xs" },
+        { "name": "sm" },
+        { "name": "md" },
+        { "name": "lg" },
+        { "name": "xl" },
+        { "name": "2xl" }
+      ]
+    },
+    {
+      "name": "fontSizes",
+      "values": [
+        { "name": "display-lg" },
+        { "name": "display-md" },
+        { "name": "display-sm" },
+        { "name": "headline-lg" },
+        { "name": "headline-md" },
+        { "name": "headline-sm" },
+        { "name": "title-lg" },
+        { "name": "title-md" },
+        { "name": "title-sm" },
+        { "name": "body-lg" },
+        { "name": "body-md" },
+        { "name": "body-sm" },
+        { "name": "label-lg" },
+        { "name": "label-md" },
+        { "name": "label-sm" }
+      ]
+    },
+    {
+      "name": "textAlign",
+      "values": [
+        { "name": "start" },
+        { "name": "left" },
+        { "name": "center" },
+        { "name": "right" },
+        { "name": "end" },
+        { "name": "justify" }
+      ]
+    },
+    {
+      "name": "justifyContent",
+      "values": [
+        { "name": "start" },
+        { "name": "center" },
+        { "name": "end" },
+        { "name": "between" },
+        { "name": "around" },
+        { "name": "evenly" }
+      ]
+    },
+    {
+      "name": "alignItems",
+      "values": [
+        { "name": "start" },
+        { "name": "center" },
+        { "name": "end" },
+        { "name": "stretch" },
+        { "name": "baseline" }
+      ]
+    },
+    {
+      "name": "elevation",
+      "values": [
+        { "name": "0" },
+        { "name": "1" },
+        { "name": "2" },
+        { "name": "3" },
+        { "name": "4" },
+        { "name": "5" }
+      ]
+    },
+    {
+      "name": "radius",
+      "values": [
+        { "name": "none" },
+        { "name": "xs" },
+        { "name": "sm" },
+        { "name": "md" },
+        { "name": "lg" },
+        { "name": "xl" },
+        { "name": "full" }
+      ]
+    }
+  ],
+  "globalAttributes": [
+    {
+      "name": "cha-row",
+      "description": "Displays children in a row (flex-direction: row).",
+      "valueSet": "v"
+    },
+    {
+      "name": "cha-col",
+      "description": "Displays children in a column (flex-direction: column).",
+      "valueSet": "v"
+    },
+    {
+      "name": "cha-stack",
+      "description": "Container that stacks child elements in layers on top of the same space (Grid Layering System).",
+      "valueSet": "v"
+    },
+    {
+      "name": "cha-place",
+      "description": "Defines the alignment and position of a child element inside a [cha-stack] container.",
+      "values": [
+        {
+          "name": "top-left",
+          "description": "Aligns the element to the top-left corner."
+        },
+        {
+          "name": "top-center",
+          "description": "Aligns the element to the top border, centered horizontally."
+        },
+        {
+          "name": "top-right",
+          "description": "Aligns the element to the top-right corner."
+        },
+        {
+          "name": "bottom-left",
+          "description": "Aligns the element to the bottom-left corner."
+        },
+        {
+          "name": "bottom-center",
+          "description": "Aligns the element to the bottom border, centered horizontally."
+        },
+        {
+          "name": "bottom-right",
+          "description": "Aligns the element to the bottom-right corner."
+        }
+      ]
+    },
+    {
+      "name": "cha-center",
+      "description": "Centers children both horizontally and vertically (flex with center alignment).",
+      "valueSet": "v"
+    },
+    {
+      "name": "cha-expanded",
+      "description": "Makes the element take available space (flex: 1 1 0%).",
+      "valueSet": "v"
+    },
+    {
+      "name": "cha-wrap",
+      "description": "Allows flex items to wrap (flex-wrap: wrap).",
+      "valueSet": "v"
+    },
+    {
+      "name": "cha-field",
+      "description": "Container for form fields with label and input styling.",
+      "valueSet": "v"
+    },
+    {
+      "name": "cha-justify",
+      "description": "Sets justify-content for flex layout.",
+      "valueSet": "justifyContent"
+    },
+    {
+      "name": "cha-align",
+      "description": "Sets align-items for flex layout.",
+      "valueSet": "alignItems"
+    },
+    {
+      "name": "cha-g",
+      "description": "Sets gap between children.",
+      "valueSet": "spacing"
+    },
+    {
+      "name": "cha-m",
+      "description": "Sets margin on all sides.",
+      "valueSet": "spacing"
+    },
+    {
+      "name": "cha-mx",
+      "description": "Sets margin-left and margin-right.",
+      "valueSet": "spacing"
+    },
+    {
+      "name": "cha-my",
+      "description": "Sets margin-top and margin-bottom.",
+      "valueSet": "spacing"
+    },
+    {
+      "name": "cha-mt",
+      "description": "Sets margin-top.",
+      "valueSet": "spacing"
+    },
+    {
+      "name": "cha-mr",
+      "description": "Sets margin-right.",
+      "valueSet": "spacing"
+    },
+    {
+      "name": "cha-mb",
+      "description": "Sets margin-bottom.",
+      "valueSet": "spacing"
+    },
+    {
+      "name": "cha-ml",
+      "description": "Sets margin-left.",
+      "valueSet": "spacing"
+    },
+    {
+      "name": "cha-p",
+      "description": "Sets padding on all sides.",
+      "valueSet": "spacing"
+    },
+    {
+      "name": "cha-px",
+      "description": "Sets padding-left and padding-right.",
+      "valueSet": "spacing"
+    },
+    {
+      "name": "cha-py",
+      "description": "Sets padding-top and padding-bottom.",
+      "valueSet": "spacing"
+    },
+    {
+      "name": "cha-pt",
+      "description": "Sets padding-top.",
+      "valueSet": "spacing"
+    },
+    {
+      "name": "cha-pr",
+      "description": "Sets padding-right.",
+      "valueSet": "spacing"
+    },
+    {
+      "name": "cha-pb",
+      "description": "Sets padding-bottom.",
+      "valueSet": "spacing"
+    },
+    {
+      "name": "cha-pl",
+      "description": "Sets padding-left.",
+      "valueSet": "spacing"
+    },
+    {
+      "name": "cha-fs",
+      "description": "Sets font-size using predefined scale.",
+      "valueSet": "fontSizes"
+    },
+    {
+      "name": "cha-ta",
+      "description": "Sets text-align.",
+      "valueSet": "textAlign"
+    },
+    {
+      "name": "cha-elv",
+      "description": "Sets box-shadow elevation (0-5).",
+      "valueSet": "elevation"
+    },
+    {
+      "name": "cha-rad",
+      "description": "Sets border-radius.",
+      "valueSet": "radius"
+    },
+    {
+      "name": "cha-bd",
+      "description": "Sets border color. Use without value to apply default border (1px solid outline).",
+      "valueSet": "colorTokens"
+    },
+    {
+      "name": "cha-bg",
+      "description": "Sets background color.",
+      "valueSet": "colorTokens"
+    },
+    {
+      "name": "cha-c",
+      "description": "Sets text color.",
+      "valueSet": "colorTokens"
+    }
+  ]
+}

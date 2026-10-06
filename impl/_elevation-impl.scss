@@ -1,0 +1,9 @@
+@use "../def/elevation";
+
+@mixin set {
+  @each $key, $value in elevation.$vars {
+    [cha-elv="#{$key}"] {
+      box-shadow: $value;
+    }
+  }
+}

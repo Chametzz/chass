@@ -1,0 +1,64 @@
+[cha-fs="display-lg"] {
+  font-size: var(--display-lg) !important;
+  line-height: var(--lh-display) !important;
+}
+[cha-fs="display-md"] {
+  font-size: var(--display-md) !important;
+  line-height: var(--lh-display) !important;
+}
+[cha-fs="display-sm"] {
+  font-size: var(--display-sm) !important;
+  line-height: var(--lh-display) !important;
+}
+
+[cha-fs="headline-lg"] {
+  font-size: var(--headline-lg);
+  line-height: var(--lh-headline);
+}
+[cha-fs="headline-md"] {
+  font-size: var(--headline-md);
+  line-height: var(--lh-headline);
+}
+[cha-fs="headline-sm"] {
+  font-size: var(--headline-sm);
+  line-height: var(--lh-headline);
+}
+
+[cha-fs="title-lg"] {
+  font-size: var(--title-lg);
+  line-height: var(--lh-title);
+}
+[cha-fs="title-md"] {
+  font-size: var(--title-md);
+  line-height: var(--lh-title);
+}
+[cha-fs="title-sm"] {
+  font-size: var(--title-sm);
+  line-height: var(--lh-title);
+}
+
+[cha-fs="body-lg"] {
+  font-size: var(--body-lg);
+  line-height: var(--lh-body);
+}
+[cha-fs="body-md"] {
+  font-size: var(--body-md);
+  line-height: var(--lh-body);
+}
+[cha-fs="body-sm"] {
+  font-size: var(--body-sm);
+  line-height: var(--lh-body);
+}
+
+[cha-fs="label-lg"] {
+  font-size: var(--label-lg);
+  line-height: var(--lh-label);
+}
+[cha-fs="label-md"] {
+  font-size: var(--label-md);
+  line-height: var(--lh-label);
+}
+[cha-fs="label-sm"] {
+  font-size: var(--label-sm);
+  line-height: var(--lh-label);
+}

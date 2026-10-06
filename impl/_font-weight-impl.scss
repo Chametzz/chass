@@ -1,0 +1,9 @@
+@use "../def/font-weight";
+
+@mixin set {
+  @each $key, $value in font-weight.$vars {
+    [cha-fw="#{$key}"] {
+      font-weight: $value;
+    }
+  }
+}

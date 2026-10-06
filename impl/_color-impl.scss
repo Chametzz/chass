@@ -1,0 +1,50 @@
+@use "../def/color";
+@use "sass:map";
+
+@mixin set {
+  [cha-bd] {
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  @each $key, $value in color.$vars {
+    $var-color: map.get($value, "var");
+    $on-var-color: map.get($value, "on-var");
+
+    [cha-bd="#{$key}"] {
+      --cha-bd: #{$var-color};
+      --cha-c: #{$var-color};
+    }
+  }
+
+  [cha-bd="transparent"] {
+    --cha-bd: transparent;
+  }
+
+  @each $key, $value in color.$vars {
+    $var-color: map.get($value, "var");
+    $on-var-color: map.get($value, "on-var");
+
+    [cha-bg="#{$key}"] {
+      --cha-bg: #{$var-color};
+      --cha-c: #{$on-var-color};
+    }
+  }
+
+  [cha-bg="transparent"] {
+    --cha-bg: transparent;
+  }
+
+  @each $key, $value in color.$vars {
+    $var-color: map.get($value, "var");
+    $on-var-color: map.get($value, "on-var");
+
+    [cha-c="#{$key}"] {
+      --cha-c: #{$var-color};
+    }
+  }
+
+  [cha-c="transparent"] {
+    --cha-c: transparent;
+  }
+}
